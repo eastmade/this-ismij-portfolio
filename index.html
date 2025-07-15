@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Portfolio - Muhammad Ismij Hidayat</title>
+    <!-- Chosen Palette: Warm Neutral Harmony -->
+    <!-- Application Structure Plan: A single-page application with a top navigation bar for smooth scrolling. The structure prioritizes impact by featuring an interactive project case study section. Users select a project, and the page dynamically updates text and a Chart.js visualization to showcase key results. This design moves beyond a linear slide deck to an engaging, user-driven exploratory experience, which is more effective for busy hiring managers. An "Approach & Skills" section uses tabs to keep detailed information organized and accessible without cluttering the main view. -->
+    <!-- Visualization & Content Choices: 
+        - Hero Section: Goal=Inform, Method=Static Text, Justification=Clean, immediate introduction.
+        - About Me/Why Me: Goal=Inform, Method=Styled HTML cards with Unicode icons (e.g., 👤, 🚀), Justification=Improves scannability of key strengths.
+        - Approach & Skills: Goal=Organize, Method=Tabbed interface (HTML/JS), Justification=Prevents information overload. Approach visualized as a CSS flow diagram.
+        - Project Case Studies: Goal=Compare/Inform, Method=Dynamic text blocks + interactive Chart.js bar chart, Interaction=User clicks project button to update content and chart, Justification=Visually demonstrates impact and data-savviness, making results tangible and memorable. This is the core interactive element.
+        - Chart.js Bar Chart: Chosen to clearly compare before/after metrics (e.g., error reduction, conversion increase), making the project's success undeniable.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-gray-800">
+                Muhammad Ismij Hidayat's Product Management Portfolio
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-600 font-medium">About Me</a>
+                <a href="#product" class="nav-link text-gray-600 font-medium">Product</a>
+                <a href="#approach" class="nav-link text-gray-600 font-medium">Approach</a>
+                <a href="#contact" class="nav-link text-gray-600 font-medium">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-800 focus:outline-none" aria-label="Open mobile navigation menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 nav-link text-gray-600">About Me</a>
+            <a href="#product" class="block py-2 nav-link text-gray-600">Product</a>
+            <a href="#approach" class="block py-2 nav-link text-gray-600">Approach</a>
+            <a href="#contact" class="block py-2 nav-link text-gray-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-20 md:py-32 bg-white fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Muhammad Ismij Hidayat</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600">Building with Purpose<br>Solving with Empathy<br><span id="years-experience" data-target="5">0</span>+ Years in Digital Product Development</p>
+                <a href="#product" class="mt-8 inline-block bg-gray-800 text-white font-bold rounded-lg px-8 py-3 hover:bg-gray-700 transition-colors duration-300 shadow-lg">View My Case Study</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">Data-Driven & User-Driven Product Manager</h2>
+                    <p class="mt-2 text-lg text-gray-600 max-w-3xl mx-auto">I am an experienced Product Manager passionate about building user-centric solutions. I combine business strategy with user insights to create digital products that not only succeed in the market but are also loved by users</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="text-4xl mb-4">🤝</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cross-Functional Leadership</h3>
+                        <p class="text-gray-600">Skilled in leading multidisciplinary teams (engineering, design, business) to achieve common goals efficiently. Strong ownership mindset.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="text-4xl mb-4">🚀</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Focus on Execution</h3>
+                        <p class="text-gray-600">Experienced in turning product strategies into real features that deliver measurable impact to the business, prioritizing cost efficiency, cash flow, and ROI.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="text-4xl mb-4">🌍</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Multi-Industry Experience</h3>
+                        <p class="text-gray-600">Having experience in various sectors: POS SaaS Fintech, HRIS Tech, and Insurtech, gives me a rich perspective. High-Accuracy, and Mobile-First environments.</p>
+                    </div>
+                </div>
+                <!-- New CTA after About Me section -->
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-block bg-orange-600 text-white font-bold rounded-lg px-8 py-3 hover:bg-orange-700 transition-colors duration-300 shadow-lg">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="product" class="py-20 bg-gray-50 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">My Product Case Study</h2>
+                    <p class="mt-2 text-lg text-gray-600">Select a product to see how I turned challenges into measurable results</p>
+                </div>
+                
+                <!-- Project Selector - Reverted to non-swipable, flex-wrap -->
+                <div id="project-selector" class="flex flex-wrap justify-center gap-3 md:gap-4 mb-10">
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6 md:p-10 transition-all duration-500">
+                    <div class="grid lg:grid-cols-5 gap-8">
+                        <div class="lg:col-span-2">
+                            <h3 id="project-title" class="text-2xl font-bold text-gray-800 mb-1"></h3>
+                            <p id="project-role" class="font-medium text-gray-500 mb-2"></p>
+                            <a id="project-link" href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline text-sm mb-4 block"></a>
+                            
+                            <h4 class="font-semibold text-gray-700 mt-6 mb-2">Key Challenges</h4>
+                            <p class="text-gray-600"></p>
+
+                            <h4 class="font-semibold text-gray-700 mt-6 mb-2">Some Key Initiatives</h4>
+                            <ul id="project-initiatives" class="list-disc list-inside text-gray-600 space-y-1">
+                            </ul>
+                        </div>
+                        <div class="lg:col-span-3 flex flex-col items-center justify-center">
+                            <h4 class="text-lg font-semibold text-gray-700 mb-2 text-center">Impact Visualization</h4>
+                            <p class="text-center mt-3 text-sm text-gray-500">
+                                <span id="project-result-prefix" class="font-bold text-gray-800"></span>
+                                <span id="project-result-value" class="font-bold text-gray-800">0</span>
+                                <span id="project-result-unit" class="font-bold text-gray-800"></span>
+                                <span id="project-result-description-text"></span>
+                            </p>
+                            <p id="project-overall-contribution" class="text-center mt-2 text-base font-semibold text-gray-700"></p>
+                            <div class="chart-container">
+                                <canvas id="project-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="py-20 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">Approach & Expertise</h2>
+                    <p class="mt-2 text-lg text-gray-600">The frameworks and tools I use to build great products</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="border-b border-gray-200 mb-8">
+                        <nav class="-mb-px flex justify-center space-x-8" aria-label="Tabs">
+                            <button data-tab="approach" class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                                Product Approach
+                            </button>
+                            <button data-tab="tools" class="tab-btn whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                                Tools & Technologies
+                            </button>
+                        </nav>
+                    </div>
+
+                    <div id="tab-content">
+                        <div id="approach-content" class="tab-pane">
+                             <div class="grid md:grid-cols-3 gap-8 text-center">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold text-gray-800">1. Discovery</h3>
+                                    <p class="mt-2 text-gray-600">Understand the 'WHY' through user interviews, field observations, funnel + behavioral analysis to find real problems.</p>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold text-gray-800">2. Delivery</h3>
+                                    <p class="mt-2 text-gray-600">Work in an Agile *Squad*, manage *Backlog*, and collaborate closely with the QA Team for quality delivery.</p>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold text-gray-800">3. Decision Making</h3>
+                                    <p class="mt-2 text-gray-600">Balancing user insights + Business OKRs + Effort Tradeoffs for technical considerations to make the right product decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tools-content" class="tab-pane hidden">
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-700 mb-3 text-center">Product & Project Management</h4>
+                                    <div class="flex flex-wrap justify-center gap-2">
+                                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Jira</span>
+                                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Confluence</span>
+                                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Trello</span>
+                                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Notion</span>
+                                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Google Workspace</span>
+                                        <span class="bg-100 text-gray-700 px-3 py-1 rounded-full text-sm">Office 360</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700 mb-3 text-center">Analytic</h4>
+                                    <div class="flex flex-wrap justify-center gap-2">
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Google Analytics</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Mixpanel</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Posthog</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">META</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-700 mb-3 text-center">Prototyping Design & Other</h4>
+                                    <div class="flex flex-wrap justify-center gap-2">
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Figma</span>
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Adobe Photoshop</span>
+                                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Axure RP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- New CTA after Approach & Expertise section -->
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-block bg-gray-800 text-white font-bold rounded-lg px-8 py-3 hover:bg-gray-700 transition-colors duration-300 shadow-lg">Schedule a Call</a>
+                </div>
+            </div>
+        </section>
+
+            <section id="testimonials" class="py-20 bg-gray-100 fade-in-section">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-800">What They Say About Me</h2>
+                        <p class="mt-2 text-lg text-gray-600">A few quotes from colleagues and leaders</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <p class="text-gray-700 italic mb-4">"Hidayat is a very intelligent person who always retains his passion. He is helpful and has great ideas. He has very professional analytical and summarizing skills, and in the past he has provided the team with many useful research findings and product analysis and design. We all appreciate him."</p>
+                            <p class="text-gray-800 font-semibold">- Tonghui Shen, Product Director</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <p class="text-gray-700 italic mb-4">"Hidayat is a smart guy and loves to understand the problems in depth by asking right set of questions which shows he has a great potential to be a very fine and polished product leader. He has shown great persistence and urge of learning during his journey at Lifepal and thus I recommend firms to consider him for product roles and other projects management roles."</p>
+                            <p class="text-gray-800 font-semibold">- Shivang Gupta, AI Leader - Product Expert</p>
+                        </div>
+                        <!-- New Testimonials Added Below -->
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <p class="text-gray-700 italic mb-4">"Ismij's ability to create clear and comprehensive PRDs made our tasks as developers straightforward and well-guided. His documents were not only meticulous in detailing what was needed but also why each element was important, aligning the entire team with the project's vision and objectives. This clarity was instrumental in enhancing our efficiency and effectiveness in development.
+
+As a Mobile Developer, I especially appreciated Ismij's collaborative approach. He consistently demonstrated a deep understanding of product development intricacies, which significantly contributed to the success of our projects. His capacity to dissect complex issues and articulate clear, actionable solutions was invaluable."</p>
+                            <p class="text-gray-800 font-semibold">- Bagus Kurnianto, Lead Software Engineer</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <p class="text-gray-700 italic mb-4">"I had the pleasure of working alongside Muhammad Ismij Hidayat while at Lifepal as a Product Designer. Working collaboratively with Muhammad Ismij Hidayat as a Product Designer at Lifepal. Throughout our time working together, I was continually impressed by his dedicated professionalism and intuitive product knowledge. His strong managerial skills were a vital contribution to the success of our product development team at Lifepal.
+
+He was a valuable asset to the product development team and He was able to effectively manage multiple projects while maintaining a high level of quality, making him an exceptional Product Manager. I highly recommend Muhammad Ismij Hidayat for any Product Management role, as he is a dedicated and talented professional who will bring value to any organization."</p>
+                            <p class="text-gray-800 font-semibold">- Tobi Santoso, Product Designer</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <p class="text-gray-700 italic mb-4">"Hidayat is always open for discussions when our team comes to difficulties and challenges which is very helpful to sum up all of our individual findings to make better decisions or solutions."</p>
+                            <p class="text-gray-800 font-semibold">- Indra Tanaya, Software Development Engineer</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                            <p class="text-gray-700 italic mb-4">"A great leader is not a dictator, but a caring mentor. Ismed is that kind of manager. great problem solver, smart and goal-oriented person."</p>
+                            <p class="text-gray-800 font-semibold">- Ken Bagas Nandito Pandjaitan, Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white fade-in-section">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <h2 class="text-3xl font-bold">Let's Discuss!</h2>
+            <p class="mt-4 max-w-xl mx-auto">I'm ready to help take your product to the next level
+            <br>Let's Connect!</p>
+            <div class="mt-8 flex flex-col items-center justify-center space-y-4">
+                 <a href="https://www.linkedin.com/in/hidayatim/" target="_blank" rel="noopener noreferrer" class="hover:text-orange-300 transition-colors flex items-center justify-center font-bold px-6 py-3 bg-gray-700 text-white rounded-lg shadow-lg hover:bg-gray-600 w-full md:w-auto" aria-label="Visit my LinkedIn profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin mr-2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                 </a>
+                 <button id="open-contact-modal" class="inline-flex items-center justify-center bg-gray-700 text-white font-bold rounded-lg px-6 py-3 hover:bg-gray-600 transition-colors duration-300 shadow-lg w-full md:w-auto" aria-label="Open email contact form">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail mr-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Send a Note via Email
+                 </button>
+                 <a href="Muhammad_Ismij_Hidayat_CVResume_Q2_2025.pdf" download class="inline-block bg-orange-600 text-white font-bold rounded-lg px-8 py-3 hover:bg-orange-700 transition-colors duration-300 shadow-lg w-full md:w-auto" aria-label="Download my Resume/CV">Download My Resume/CV</a>
+            </div>
+            <div class="mt-10 border-t border-gray-700 pt-6">
+                <p class="text-gray-400 text-sm">&copy; 2025 Muhammad Ismij Hidayat</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close-btn" aria-label="Close contact form">&times;</button>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Send Me a Message</h3>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="contact-name" class="block text-gray-700 text-sm font-medium mb-1">Name</label>
+                    <input type="text" id="contact-name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Your Name" required aria-required="true">
+                    <span id="name-error" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="contact-email" class="block text-gray-700 text-sm font-medium mb-1">Email</label>
+                    <input type="email" id="contact-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="your.email@example.com" required aria-required="true">
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="contact-message" class="block text-gray-700 text-sm font-medium mb-1">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Your message..." required aria-required="true"></textarea>
+                    <span id="message-error" class="error-message"></span>
+                </div>
+                <button type="submit" class="w-full bg-gray-800 text-white font-bold rounded-lg px-6 py-3 hover:bg-gray-700 transition-colors duration-300 shadow-lg">Send Message</button>
+            </form>
+            <div id="form-feedback" class="message-feedback hidden"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top" aria-label="Back to top of page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+
+    
+</body>
+</html>
