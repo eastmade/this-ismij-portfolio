@@ -31,9 +31,12 @@ window.onload = function() {
                 logo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/0dd2ff_5657d3c8e5d642a28f53e1d4fa223a7c_mv2_cemoaw.png', // Updated Labamu logo
                 buttonLogo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/0dd2ff_5657d3c8e5d642a28f53e1d4fa223a7c_mv2_cemoaw.png', // Updated Labamu button logo
                 appScreenshots: [
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_3_iyaoct.png',
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_9_zsa9ee.png',
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_1_b7qsv4.png'
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_1_eux3p4.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_2_mmrgjd.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_3_nliqjv.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_4_hbce3e.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_5_hljazi.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Labamu_6_kc9pj2.png'
                 ]
             },
             {
@@ -58,9 +61,12 @@ window.onload = function() {
                 logo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/Logo_Appsensi_o7eoj5.png', // Updated Appsensi logo
                 buttonLogo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/Logo_Appsensi_o7eoj5.png', // Updated Appsensi button logo
                 appScreenshots: [
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_3_gowxzh.png',
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_2_kbizkw.png', // Corrected URL
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_5_v9muk0.png'
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_1_ytinyd.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_2_i11qsu.png', // Corrected URL
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_3_lg3ayo.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_4_jb82s6.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_5_t4hkyw.png',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Appsensi_6_wmdaem.png'
                 ]
             },
             {
@@ -85,9 +91,12 @@ window.onload = function() {
                 logo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/105680_fnytej.png', // Updated Lifepal logo
                 buttonLogo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/105680_fnytej.png', // Updated Lifepal button logo
                 appScreenshots: [
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_1_jyc1tb.jpg',
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_2_vaycci.jpg',
-                    'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_3_rkqsfl.jpg'
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_1_u64djz.jpg',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_2_qmo6fv.jpg',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_3_p6stmi.jpg',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_4_kluv6v.jpg',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_5_e3inbx.jpg',
+                            'https://res.cloudinary.com/dnxqhmprj/image/upload/Lifepal_6_hu6zj2.jpg'
                 ]
             }
         ],
