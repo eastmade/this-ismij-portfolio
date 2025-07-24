@@ -14,11 +14,11 @@ window.onload = function() {
                 name: 'Labamu (Order Management System – POS+PPOB+QRIS+OSS Mobile & Web App)',
                 role: 'Senior Product Manager @ PT Tunas Digital Indonesia',
                 link: 'https://labamu.co.id', // Corrected from .coid to .co.id
-                problem: 'Fragmented order process and frequent cashier errors in offline-first environment',
+                problem: 'Fragmented order process and frequent cashier errors, a clear problem for non-tech-savvy users',
                 initiatives: [
-                    'Redesigned checkout UX to minimize human error',
+                    'Redesigned checkout UX to minimize human error with intuitive checkout UX',
                     'Built real-time inventory sync between cashier and kitchen',
-                    'Optimized for offline reliability and automatic sync when reconnected'
+                    'Optimized interactive tutorials with an assisting wizard'
                 ],
                 results: {
                     label: 'Order Input Errors',
@@ -26,7 +26,7 @@ window.onload = function() {
                     unit: '%',
                     prefix: '',
                     descriptionText: 'Fewer Order Input Errors, reduced complaints. Increased +25% merchant satisfaction.',
-                    overallContribution: '+20% App Adoption'
+                    overallContribution: '+20% App Adoption, App rating above 4.0'
                 },
                 logo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/0dd2ff_5657d3c8e5d642a28f53e1d4fa223a7c_mv2_cemoaw.png', // Updated Labamu logo
                 buttonLogo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/0dd2ff_5657d3c8e5d642a28f53e1d4fa223a7c_mv2_cemoaw.png', // Updated Labamu button logo
@@ -46,8 +46,8 @@ window.onload = function() {
                 link: 'https://appsensi.com',
                 problem: 'Payroll inaccuracies due to manual attendance across distributed teams',
                 initiatives: [
-                    'Real-Time Tracking, Seamless Reporting, Online & Offline Face Recognition-based attendance, and Integrated Payroll',
-                    'Integrated approval flows with dynamic scheduling',
+                    'Real-Time Auto Tracking, Seamless Reporting, Online & Offline Face Recognition-based attendance, Bulk reporting and Integrated Payroll',
+                    'Integrated leave, claim & approval flows with dynamic scheduling',
                     'Develop a fully integrated payroll system'
                 ],
                 results: {
@@ -56,7 +56,7 @@ window.onload = function() {
                     unit: '%',
                     prefix: '',
                     descriptionText: 'Fewer Manual Errors. Significant time savings for HR operations.',
-                    overallContribution: '+15% MAU Increase'
+                    overallContribution: '+15% Paid User Increase, App rating above 4.0'
                 },
                 logo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/Logo_Appsensi_o7eoj5.png', // Updated Appsensi logo
                 buttonLogo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/Logo_Appsensi_o7eoj5.png', // Updated Appsensi button logo
@@ -86,7 +86,7 @@ window.onload = function() {
                     unit: '%',
                     prefix: '', 
                     descriptionText: 'Increased Search-to-Conversion. Boosted qualified leads through better segmentation.',
-                    overallContribution: '+30% MoM Business Growth'
+                    overallContribution: '+30% MoM Business Growth, #1 Google Rank'
                 },
                 logo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/105680_fnytej.png', // Updated Lifepal logo
                 buttonLogo: 'https://res.cloudinary.com/dnxqhmprj/image/upload/105680_fnytej.png', // Updated Lifepal button logo
